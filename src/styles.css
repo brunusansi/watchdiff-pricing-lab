@@ -80,7 +80,6 @@ a {
   border-radius: 999px;
   background: var(--accent-data);
   box-shadow: 0 0 18px var(--accent-data);
-  animation: pulse 1.8s infinite;
 }
 
 .layout {
@@ -304,9 +303,15 @@ h1 {
 
 .card__title-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px 12px;
+}
+
+.card__title-copy {
+  flex: 1 1 9rem;
+  min-width: 0;
 }
 
 .card__tier {
@@ -320,8 +325,19 @@ h1 {
 }
 
 .delta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  max-width: 100%;
+  margin-left: auto;
+  padding: 0.38rem 0.55rem;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+  line-height: 1;
+  letter-spacing: 0.04em;
   color: var(--accent-alert);
-  font-size: 0.75rem;
+  font-size: clamp(0.66rem, 0.72vw, 0.75rem);
 }
 
 .delta--up {
@@ -336,6 +352,7 @@ h1 {
   padding: 16px;
   border: 1px solid rgba(98, 225, 255, 0.2);
   background: rgba(98, 225, 255, 0.03);
+  overflow: hidden;
 }
 
 .price-old {
@@ -345,14 +362,32 @@ h1 {
 }
 
 .price-current {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.35rem;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
   font-family: "IBM Plex Mono", monospace;
-  font-size: clamp(2.8rem, 5vw, 4.7rem);
+  font-size: clamp(2.4rem, 4vw, 4.7rem);
   line-height: 0.98;
   color: var(--accent-data);
+  font-variant-numeric: tabular-nums;
 }
 
-.price-current small {
-  font-size: 1.05rem;
+.price-current__value {
+  display: block;
+  min-width: 0;
+  flex: 1 1 auto;
+  font-size: 1em;
+  letter-spacing: -0.07em;
+}
+
+.price-current__period {
+  flex: 0 0 auto;
+  font-size: 0.26em;
+  line-height: 1.1;
   color: var(--text-muted);
 }
 
@@ -407,16 +442,6 @@ h1 {
 .brief-card ul {
   padding-left: 18px;
   margin: 0;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 1080px) {

@@ -175,7 +175,7 @@ function renderPriceCards(plans) {
           <div class="card__topline">
             <span class="card__badge">${escapeHtml(plan.badge)}</span>
             <div class="card__title-row">
-              <div>
+              <div class="card__title-copy">
                 <h3 class="card__tier">${escapeHtml(plan.name)}</h3>
                 <div class="card__tier-note">${escapeHtml(plan.note)}</div>
               </div>
@@ -185,8 +185,11 @@ function renderPriceCards(plans) {
 
           <div class="card__price-block">
             <span class="price-old">${escapeHtml(formatCurrency(plan.previousPrice))}/mo</span>
-            <strong class="price-current" data-scramble="price" data-value="${escapeHtml(`${formatCurrency(plan.currentPrice)}/mo`)}">
-              ${escapeHtml(formatCurrency(plan.currentPrice))}<small>/mo</small>
+            <strong class="price-current" data-fit-price>
+              <span class="price-current__value" data-scramble="price" data-value="${escapeHtml(formatCurrency(plan.currentPrice))}">
+                ${escapeHtml(formatCurrency(plan.currentPrice))}
+              </span>
+              <small class="price-current__period">/mo</small>
             </strong>
           </div>
 
