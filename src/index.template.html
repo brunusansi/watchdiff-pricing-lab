@@ -64,21 +64,21 @@
               <span>01</span>
               <div>
                 <h2>Meaning over pixels</h2>
-                <p>Each pricing block shifts its number, delta, and update badge every half hour.</p>
+                <p>Each pricing block shifts its number, delta, and update badge at each 30-minute boundary.</p>
               </div>
             </article>
             <article>
               <span>02</span>
               <div>
                 <h2>Static hosting, real churn</h2>
-                <p>GitHub Actions rebuilds the page on a 30-minute schedule, then GitHub Pages serves the new snapshot.</p>
+                <p>GitHub Actions rebuilds snapshots on a schedule, while the page also self-advances pricing at each 30-minute boundary.</p>
               </div>
             </article>
             <article>
               <span>03</span>
               <div>
                 <h2>Built for scraping labs</h2>
-                <p>Prices render in the HTML itself, not just client-only state, and the page stays visually stable between scheduled builds.</p>
+                <p>The deployed HTML ships a real pricing snapshot, and the page only self-advances when a new 30-minute bucket starts.</p>
               </div>
             </article>
           </div>
@@ -104,8 +104,8 @@
           <p class="eyebrow">Alert model</p>
           <h2>What changed this cycle?</h2>
           <p>
-            The numbers, badges, and delta chips change on scheduled deploys only. That gives AI monitors enough semantic
-            signal to say “pricing changed” instead of “layout moved.”
+            The cards self-advance at each 30-minute boundary, while scheduled deploys refresh the static snapshot. That gives
+            AI monitors enough semantic signal to say “pricing changed” instead of “layout moved.”
           </p>
         </article>
 

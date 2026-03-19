@@ -171,22 +171,24 @@ function renderPriceCards(plans) {
       const featuredClass = plan.featured ? " pricing-card--featured" : "";
 
       return `
-        <article class="pricing-card${featuredClass}" aria-label="${escapeHtml(plan.name)} pricing card">
+        <article class="pricing-card${featuredClass}" aria-label="${escapeHtml(plan.name)} pricing card" data-plan-name="${escapeHtml(plan.name)}">
           <div class="card__topline">
-            <span class="card__badge">${escapeHtml(plan.badge)}</span>
+            <span class="card__badge" data-plan-field="badge">${escapeHtml(plan.badge)}</span>
             <div class="card__title-row">
               <div class="card__title-copy">
                 <h3 class="card__tier">${escapeHtml(plan.name)}</h3>
                 <div class="card__tier-note">${escapeHtml(plan.note)}</div>
               </div>
-              <div class="${deltaClass}">[ ${deltaPrefix} ${plan.changeAmount > 0 ? "+" : ""}${formatCurrency(plan.changeAmount)} ]</div>
+              <div class="${deltaClass}" data-fit-delta data-plan-field="delta-chip">
+                <span class="delta__value" data-plan-field="delta-value">[ ${deltaPrefix} ${plan.changeAmount > 0 ? "+" : ""}${formatCurrency(plan.changeAmount)} ]</span>
+              </div>
             </div>
           </div>
 
           <div class="card__price-block">
-            <span class="price-old">${escapeHtml(formatCurrency(plan.previousPrice))}/mo</span>
+            <span class="price-old" data-plan-field="previous-price">${escapeHtml(formatCurrency(plan.previousPrice))}/mo</span>
             <strong class="price-current" data-fit-price>
-              <span class="price-current__value" data-scramble="price" data-value="${escapeHtml(formatCurrency(plan.currentPrice))}">
+              <span class="price-current__value" data-scramble="price" data-value="${escapeHtml(formatCurrency(plan.currentPrice))}" data-plan-field="current-price">
                 ${escapeHtml(formatCurrency(plan.currentPrice))}
               </span>
               <small class="price-current__period">/mo</small>
@@ -200,7 +202,7 @@ function renderPriceCards(plans) {
           </ul>
 
           <div class="card__footer">
-            <div class="card__tier-note">CURRENT STRATEGY // ${escapeHtml(plan.tone)}</div>
+            <div class="card__tier-note" data-plan-field="tone">CURRENT STRATEGY // ${escapeHtml(plan.tone)}</div>
             <a class="button" href="./data/pricing.json">inspect live snapshot</a>
           </div>
         </article>
