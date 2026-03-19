@@ -1,12 +1,9 @@
 name: Update pricing lab
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "1,31 * * * *"
 
 permissions:
   contents: write

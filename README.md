@@ -9,13 +9,14 @@ This repo exists as a monitoring target for products like WatchDiff. The page is
 - prices mutate every 30 minutes
 - update badges and deltas mutate with them
 - the current snapshot is present in rendered HTML and JSON
-- GitHub Actions rebuilds the site on a fixed schedule
+- GitHub Actions refreshes the static snapshot on a fixed schedule
+- the page also advances itself when a new 30-minute bucket starts
 
 ## Stack
 
 - static HTML/CSS/JS
 - Node build script for snapshot generation
-- GitHub Actions schedule (`*/30 * * * *`)
+- GitHub Actions schedule (`1,31 * * * *`)
 - GitHub Pages served from `/docs` on `main`
 - optional Stitch MCP design helper via `@google/stitch-sdk`
 
@@ -45,7 +46,7 @@ Use GitHub Pages with:
 - **Branch:** `main`
 - **Folder:** `/docs`
 
-The workflow at `.github/workflows/update-pricing-lab.yml` rebuilds and commits fresh lab snapshots every 30 minutes.
+The workflow at `.github/workflows/update-pricing-lab.yml` rebuilds and commits fresh lab snapshots shortly after each 30-minute boundary. The deployed page also recalculates pricing at the bucket boundary in the browser, so the lab keeps mutating even if GitHub scheduled runs are delayed.
 
 ## Live files
 
