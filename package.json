@@ -1,0 +1,18 @@
+{
+  "name": "watchdiff-pricing-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static GitHub Pages lab that rotates SaaS pricing every 30 minutes for monitoring demos.",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "stitch:design": "node scripts/stitch-design.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunusansi/watchdiff-pricing-lab.git"
+  },
+  "dependencies": {
+    "@google/stitch-sdk": "^0.0.3"
+  }
+}
