@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WatchDiff Pricing Lab</title>
+    <meta
+      name="description"
+      content="A GitHub Pages lab that rotates SaaS pricing every 30 minutes for AI-powered website monitoring demos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar__brand">WATCHDIFF // PRICING LAB</div>
+        <div class="topbar__status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>MONITORING ACTIVE</span>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="context-panel">
+          <p class="eyebrow">AI-POWERED WEB MONITORING</p>
+          <h1>Stop getting useless alerts.</h1>
+          <p class="lede">
+            Most monitoring tools spam you with every pixel shift. WatchDiff uses AI to understand meaning.
+            We only alert when something actually changes — like pricing, features, or messaging.
+          </p>
+
+          <div class="meta-grid">
+            <article class="meta-card">
+              <span class="meta-card__label">Current bucket</span>
+              <strong id="bucket-label">20:30–21:00 UTC</strong>
+            </article>
+            <article class="meta-card">
+              <span class="meta-card__label">Last build</span>
+              <strong id="last-build">Mar 19, 2026, 8:57 PM</strong>
+            </article>
+            <article class="meta-card">
+              <span class="meta-card__label">Next mutation</span>
+              <strong id="next-change">Mar 19, 2026, 9:00 PM</strong>
+            </article>
+            <article class="meta-card meta-card--accent">
+              <span class="meta-card__label">Countdown</span>
+              <strong id="countdown">--:--</strong>
+            </article>
+          </div>
+
+          <div class="narrative-block">
+            <p>Live goal</p>
+            <strong>Make pricing diffs obvious enough for WatchDiff-style monitors to classify as meaningful.</strong>
+          </div>
+
+          <div class="signal-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h2>Meaning over pixels</h2>
+                <p>Each pricing block shifts its number, delta, and update badge every half hour.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h2>Static hosting, real churn</h2>
+                <p>GitHub Actions rebuilds the page on a 30-minute schedule, then GitHub Pages serves the new snapshot.</p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h2>Built for scraping labs</h2>
+                <p>Prices render in the HTML itself, not just client-only state, so diff tools can detect them reliably.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="pricing-panel" aria-labelledby="pricing-heading">
+          <div class="pricing-panel__header">
+            <div>
+              <p class="eyebrow">Observed pricing surface</p>
+              <h2 id="pricing-heading">SaaS plans under active watch</h2>
+            </div>
+            <a class="ghost-link" href="./data/pricing.json">VIEW JSON SNAPSHOT</a>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card" aria-label="Pulse pricing card">
+          <div class="card__topline">
+            <span class="card__badge">UPSELL ACTIVE // DELTA +11</span>
+            <div class="card__title-row">
+              <div>
+                <h3 class="card__tier">Pulse</h3>
+                <div class="card__tier-note">5 monitored pages</div>
+              </div>
+              <div class="delta delta--up">[ ▲ +$11 ]</div>
+            </div>
+          </div>
+
+          <div class="card__price-block">
+            <span class="price-old">$27/mo</span>
+            <strong class="price-current" data-scramble="price" data-value="$38/mo">
+              $38<small>/mo</small>
+            </strong>
+          </div>
+
+          <p class="card__summary">Entry plan for teams that want pricing movement obvious enough to trip semantic monitoring, not just screenshot diffs.</p>
+
+          <ul class="card__features">
+            <li>Homepage + pricing page checks</li><li>AI change summaries</li><li>JSON snapshot feed</li>
+          </ul>
+
+          <div class="card__footer">
+            <div class="card__tier-note">CURRENT STRATEGY // Retention tweak</div>
+            <a class="button" href="./data/pricing.json">inspect live snapshot</a>
+          </div>
+        </article>
+<article class="pricing-card pricing-card--featured" aria-label="Vector pricing card">
+          <div class="card__topline">
+            <span class="card__badge">VALUE RESET // DELTA +26</span>
+            <div class="card__title-row">
+              <div>
+                <h3 class="card__tier">Vector</h3>
+                <div class="card__tier-note">25 monitored pages</div>
+              </div>
+              <div class="delta delta--up">[ ▲ +$26 ]</div>
+            </div>
+          </div>
+
+          <div class="card__price-block">
+            <span class="price-old">$81/mo</span>
+            <strong class="price-current" data-scramble="price" data-value="$107/mo">
+              $107<small>/mo</small>
+            </strong>
+          </div>
+
+          <p class="card__summary">Mid-market tier where pricing, packaging, and feature framing mutate together to mimic live SaaS experiments.</p>
+
+          <ul class="card__features">
+            <li>Rendered page diffs</li><li>Feature + copy drift alerts</li><li>30-minute snapshot history</li>
+          </ul>
+
+          <div class="card__footer">
+            <div class="card__tier-note">CURRENT STRATEGY // Seat-value increase</div>
+            <a class="button" href="./data/pricing.json">inspect live snapshot</a>
+          </div>
+        </article>
+<article class="pricing-card" aria-label="Beacon pricing card">
+          <div class="card__topline">
+            <span class="card__badge">QUOTA ACTIVE // DELTA +44</span>
+            <div class="card__title-row">
+              <div>
+                <h3 class="card__tier">Beacon</h3>
+                <div class="card__tier-note">Unlimited monitored pages</div>
+              </div>
+              <div class="delta delta--up">[ ▲ +$44 ]</div>
+            </div>
+          </div>
+
+          <div class="card__price-block">
+            <span class="price-old">$173/mo</span>
+            <strong class="price-current" data-scramble="price" data-value="$217/mo">
+              $217<small>/mo</small>
+            </strong>
+          </div>
+
+          <p class="card__summary">High-signal enterprise card with larger delta swings so AI monitors can classify real pricing intent quickly.</p>
+
+          <ul class="card__features">
+            <li>Priority semantic scoring</li><li>Custom diff thresholds</li><li>Webhook + audit export</li>
+          </ul>
+
+          <div class="card__footer">
+            <div class="card__tier-note">CURRENT STRATEGY // Expansion quota push</div>
+            <a class="button" href="./data/pricing.json">inspect live snapshot</a>
+          </div>
+        </article>
+          </div>
+        </section>
+      </main>
+
+      <section class="lower-grid">
+        <article class="brief-card">
+          <p class="eyebrow">Alert model</p>
+          <h2>What changed this cycle?</h2>
+          <p>
+            The numbers, badges, and delta chips changed on this deploy. That gives AI monitors enough semantic signal
+            to say “pricing changed” instead of “layout moved.”
+          </p>
+        </article>
+
+        <article class="brief-card">
+          <p class="eyebrow">Deployment loop</p>
+          <h2>GitHub Pages cadence</h2>
+          <ul>
+            <li>Static HTML generated in CI</li>
+            <li>Runs every 30 minutes</li>
+            <li>Served from /docs on main</li>
+          </ul>
+        </article>
+
+        <article class="brief-card">
+          <p class="eyebrow">Repo</p>
+          <h2>Inspect the source</h2>
+          <p>The code, workflow, and Stitch integration script are part of the lab.</p>
+          <a class="button button--inline" href="https://github.com/brunusansi/watchdiff-pricing-lab">OPEN GITHUB REPO</a>
+        </article>
+      </section>
+    </div>
+
+    <script id="lab-data" type="application/json">{"generatedAt":"2026-03-19T20:57:57.863Z","generatedAtLabel":"Mar 19, 2026, 8:57 PM","intervalIndex":985529,"intervalLabel":"20:30–21:00 UTC","nextChangeAt":"2026-03-19T21:00:00.000Z","nextChangeLabel":"Mar 19, 2026, 9:00 PM","repoUrl":"https://github.com/brunusansi/watchdiff-pricing-lab","plans":[{"name":"Pulse","note":"5 monitored pages","basePrice":29,"deltaPattern":[0,6,-4,12,-2,9],"tonePattern":["Baseline capture","Promo pressure","Defensive discount","Upsell burst","Market correction","Retention tweak"],"badgePattern":["STABLE","PRICE PUSH","PROMO DROP","BUNDLE TEST","REBALANCED","UPSELL ACTIVE"],"summary":"Entry plan for teams that want pricing movement obvious enough to trip semantic monitoring, not just screenshot diffs.","features":["Homepage + pricing page checks","AI change summaries","JSON snapshot feed"],"id":"pulse-985529","currentPrice":38,"previousPrice":27,"changeAmount":11,"featured":false,"tone":"Retention tweak","badge":"UPSELL ACTIVE // DELTA +11"},{"name":"Vector","note":"25 monitored pages","basePrice":89,"deltaPattern":[0,10,-6,14,-8,18],"tonePattern":["Team baseline","Expansion push","Competitive response","Feature-pack markup","Quarter-end discount","Seat-value increase"],"badgePattern":["CALIBRATED","ARPU TEST","COMPETITOR MATCH","FEATURE SURCHARGE","DISCOUNT WINDOW","VALUE RESET"],"summary":"Mid-market tier where pricing, packaging, and feature framing mutate together to mimic live SaaS experiments.","features":["Rendered page diffs","Feature + copy drift alerts","30-minute snapshot history"],"id":"vector-985529","currentPrice":107,"previousPrice":81,"changeAmount":26,"featured":true,"tone":"Seat-value increase","badge":"VALUE RESET // DELTA +26"},{"name":"Beacon","note":"Unlimited monitored pages","basePrice":189,"deltaPattern":[0,22,-10,34,-16,28],"tonePattern":["Enterprise baseline","Urgency markup","Procurement softening","Annual contract push","Retention exception","Expansion quota push"],"badgePattern":["LOCKED","ENTERPRISE PUSH","PROCUREMENT DROP","ANNUAL BUNDLE","EXCEPTION PATH","QUOTA ACTIVE"],"summary":"High-signal enterprise card with larger delta swings so AI monitors can classify real pricing intent quickly.","features":["Priority semantic scoring","Custom diff thresholds","Webhook + audit export"],"id":"beacon-985529","currentPrice":217,"previousPrice":173,"changeAmount":44,"featured":false,"tone":"Expansion quota push","badge":"QUOTA ACTIVE // DELTA +44"}]}</script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

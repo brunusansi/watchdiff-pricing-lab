@@ -1,0 +1,479 @@
+:root {
+  --bg-base: #0a0a0c;
+  --bg-surface: #141418;
+  --bg-elevated: #1b1c20;
+  --text-main: #e7e7e2;
+  --text-muted: #99a19b;
+  --accent-data: #00ff9d;
+  --accent-alert: #ff4d6d;
+  --accent-cool: #62e1ff;
+  --grid-line: rgba(0, 255, 157, 0.16);
+  --shadow-hard: 8px 8px 0 rgba(0, 255, 157, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-base);
+  color: var(--text-main);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Syne", sans-serif;
+  background:
+    linear-gradient(rgba(0, 255, 157, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 157, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(98, 225, 255, 0.08), transparent 28%),
+    var(--bg-base);
+  background-size: 36px 36px, 36px 36px, auto, auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shell {
+  width: min(1440px, calc(100% - 32px));
+  margin: 16px auto;
+  border: 1px solid var(--grid-line);
+  background: rgba(10, 10, 12, 0.86);
+  backdrop-filter: blur(10px);
+}
+
+.topbar,
+.layout,
+.lower-grid {
+  border-bottom: 1px solid var(--grid-line);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 18px 24px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.topbar__brand {
+  font-weight: 700;
+}
+
+.topbar__status {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--accent-data);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent-data);
+  box-shadow: 0 0 18px var(--accent-data);
+  animation: pulse 1.8s infinite;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(0, 1.55fr);
+}
+
+.context-panel,
+.pricing-panel,
+.brief-card {
+  position: relative;
+}
+
+.context-panel {
+  padding: 32px 24px 28px;
+  border-right: 1px solid var(--grid-line);
+}
+
+.pricing-panel {
+  padding: 32px 24px 28px;
+}
+
+.eyebrow,
+.meta-card__label,
+.card__badge,
+.delta,
+.card__tier-note,
+.ghost-link,
+.button,
+.signal-list span {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent-data);
+  font-size: 0.8rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 5vw, 5.6rem);
+  line-height: 0.94;
+  margin-bottom: 18px;
+}
+
+.lede {
+  max-width: 48ch;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.meta-card,
+.pricing-card,
+.brief-card,
+.narrative-block,
+.signal-list article {
+  border: 1px solid var(--grid-line);
+  background: linear-gradient(180deg, rgba(20, 20, 24, 0.96), rgba(14, 14, 18, 0.92));
+}
+
+.meta-card {
+  padding: 14px;
+  min-height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meta-card strong {
+  font-size: 1.1rem;
+}
+
+.meta-card--accent strong {
+  color: var(--accent-data);
+}
+
+.meta-card__label {
+  font-size: 0.73rem;
+  color: var(--text-muted);
+}
+
+.narrative-block {
+  margin-bottom: 18px;
+  padding: 16px;
+}
+
+.narrative-block p {
+  margin-bottom: 8px;
+  color: var(--accent-cool);
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.narrative-block strong {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.signal-list {
+  display: grid;
+  gap: 12px;
+}
+
+.signal-list article {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  padding: 14px;
+}
+
+.signal-list span {
+  color: var(--accent-alert);
+  font-size: 0.88rem;
+}
+
+.signal-list h2,
+.brief-card h2,
+.pricing-panel__header h2 {
+  font-size: clamp(1.4rem, 2vw, 2.2rem);
+  margin-bottom: 10px;
+}
+
+.signal-list p,
+.brief-card p,
+.brief-card li {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.pricing-panel__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-end;
+  margin-bottom: 22px;
+}
+
+.ghost-link,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--grid-line);
+  padding: 12px 14px;
+  font-size: 0.8rem;
+}
+
+.ghost-link:hover,
+.button:hover,
+.button:focus-visible {
+  background: var(--accent-data);
+  color: var(--bg-base);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.pricing-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 420px;
+  transition: transform 120ms ease-out, box-shadow 120ms ease-out, border-color 120ms ease-out;
+}
+
+.pricing-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-hard);
+  border-color: rgba(0, 255, 157, 0.45);
+}
+
+.pricing-card--featured {
+  outline: 1px solid rgba(98, 225, 255, 0.4);
+}
+
+.card__topline,
+.card__price-block,
+.card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__topline {
+  min-height: 84px;
+}
+
+.card__badge {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 0.7rem;
+  padding: 6px 8px;
+  border: 1px solid rgba(255, 77, 109, 0.4);
+  color: var(--accent-alert);
+}
+
+.card__title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card__tier {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.card__tier-note {
+  font-size: 0.73rem;
+  color: var(--text-muted);
+}
+
+.delta {
+  color: var(--accent-alert);
+  font-size: 0.75rem;
+}
+
+.delta--up {
+  color: var(--accent-alert);
+}
+
+.delta--down {
+  color: #ffd166;
+}
+
+.card__price-block {
+  padding: 16px;
+  border: 1px solid rgba(98, 225, 255, 0.2);
+  background: rgba(98, 225, 255, 0.03);
+}
+
+.price-old {
+  color: var(--accent-alert);
+  text-decoration: line-through;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.price-current {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: clamp(2.8rem, 5vw, 4.7rem);
+  line-height: 0.98;
+  color: var(--accent-data);
+}
+
+.price-current small {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+.card__summary {
+  color: var(--text-muted);
+  line-height: 1.5;
+  min-height: 72px;
+}
+
+.card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  color: var(--text-main);
+}
+
+.card__features li::before {
+  content: "> ";
+  color: var(--accent-data);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.card__footer {
+  margin-top: auto;
+}
+
+.button {
+  width: 100%;
+  background: transparent;
+}
+
+.button--inline {
+  width: fit-content;
+}
+
+.lower-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.brief-card {
+  padding: 24px;
+  min-height: 240px;
+}
+
+.brief-card + .brief-card {
+  border-left: 1px solid var(--grid-line);
+}
+
+.brief-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1080px) {
+  .layout,
+  .lower-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .context-panel,
+  .brief-card + .brief-card {
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .context-panel,
+  .brief-card {
+    border-bottom: 1px solid var(--grid-line);
+  }
+
+  .pricing-panel__header,
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .shell {
+    width: calc(100% - 16px);
+    margin: 8px auto;
+  }
+
+  .context-panel,
+  .pricing-panel,
+  .brief-card {
+    padding: 20px 16px;
+  }
+
+  .meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(84vw, 1fr);
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .pricing-card {
+    scroll-snap-align: start;
+  }
+
+  h1 {
+    max-width: 10ch;
+  }
+}
