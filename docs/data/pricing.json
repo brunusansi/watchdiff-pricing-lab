@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-20T14:22:34.301Z",
-  "generatedAtLabel": "Mar 20, 2026, 2:22 PM",
-  "intervalIndex": 985564,
-  "intervalLabel": "14:00–14:30 UTC",
-  "nextChangeAt": "2026-03-20T14:30:00.000Z",
-  "nextChangeLabel": "Mar 20, 2026, 2:30 PM",
+  "generatedAt": "2026-03-20T14:47:54.769Z",
+  "generatedAtLabel": "Mar 20, 2026, 2:47 PM",
+  "intervalIndex": 985565,
+  "intervalLabel": "14:30–15:00 UTC",
+  "nextChangeAt": "2026-03-20T15:00:00.000Z",
+  "nextChangeLabel": "Mar 20, 2026, 3:00 PM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-985564",
-      "currentPrice": 27,
-      "previousPrice": 41,
-      "changeAmount": -14,
+      "id": "pulse-985565",
+      "currentPrice": 38,
+      "previousPrice": 27,
+      "changeAmount": 11,
       "featured": false,
-      "tone": "Market correction",
-      "badge": "REBALANCED // DELTA -14"
+      "tone": "Retention tweak",
+      "badge": "UPSELL ACTIVE // DELTA +11"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-985564",
-      "currentPrice": 81,
-      "previousPrice": 103,
-      "changeAmount": -22,
+      "id": "vector-985565",
+      "currentPrice": 107,
+      "previousPrice": 81,
+      "changeAmount": 26,
       "featured": true,
-      "tone": "Quarter-end discount",
-      "badge": "DISCOUNT WINDOW // DELTA -22"
+      "tone": "Seat-value increase",
+      "badge": "VALUE RESET // DELTA +26"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-985564",
-      "currentPrice": 173,
-      "previousPrice": 223,
-      "changeAmount": -50,
+      "id": "beacon-985565",
+      "currentPrice": 217,
+      "previousPrice": 173,
+      "changeAmount": 44,
       "featured": false,
-      "tone": "Retention exception",
-      "badge": "EXCEPTION PATH // DELTA -50"
+      "tone": "Expansion quota push",
+      "badge": "QUOTA ACTIVE // DELTA +44"
     }
   ]
 }
