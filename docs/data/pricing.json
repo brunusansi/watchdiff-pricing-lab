@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-22T22:09:13.713Z",
-  "generatedAtLabel": "Mar 22, 2026, 10:09 PM",
-  "intervalIndex": 985676,
-  "intervalLabel": "22:00–22:30 UTC",
-  "nextChangeAt": "2026-03-22T22:30:00.000Z",
-  "nextChangeLabel": "Mar 22, 2026, 10:30 PM",
+  "generatedAt": "2026-03-22T22:43:17.148Z",
+  "generatedAtLabel": "Mar 22, 2026, 10:43 PM",
+  "intervalIndex": 985677,
+  "intervalLabel": "22:30–23:00 UTC",
+  "nextChangeAt": "2026-03-22T23:00:00.000Z",
+  "nextChangeLabel": "Mar 22, 2026, 11:00 PM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-985676",
-      "currentPrice": 25,
-      "previousPrice": 35,
-      "changeAmount": -10,
+      "id": "pulse-985677",
+      "currentPrice": 41,
+      "previousPrice": 25,
+      "changeAmount": 16,
       "featured": false,
-      "tone": "Defensive discount",
-      "badge": "PROMO DROP // DELTA -10"
+      "tone": "Upsell burst",
+      "badge": "BUNDLE TEST // DELTA +16"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-985676",
-      "currentPrice": 83,
-      "previousPrice": 99,
-      "changeAmount": -16,
+      "id": "vector-985677",
+      "currentPrice": 103,
+      "previousPrice": 83,
+      "changeAmount": 20,
       "featured": true,
-      "tone": "Competitive response",
-      "badge": "COMPETITOR MATCH // DELTA -16"
+      "tone": "Feature-pack markup",
+      "badge": "FEATURE SURCHARGE // DELTA +20"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-985676",
-      "currentPrice": 179,
-      "previousPrice": 211,
-      "changeAmount": -32,
+      "id": "beacon-985677",
+      "currentPrice": 223,
+      "previousPrice": 179,
+      "changeAmount": 44,
       "featured": false,
-      "tone": "Procurement softening",
-      "badge": "PROCUREMENT DROP // DELTA -32"
+      "tone": "Annual contract push",
+      "badge": "ANNUAL BUNDLE // DELTA +44"
     }
   ]
 }
