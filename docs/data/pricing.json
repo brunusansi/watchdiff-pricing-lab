@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-22T08:46:55.284Z",
-  "generatedAtLabel": "Mar 22, 2026, 8:46 AM",
-  "intervalIndex": 985649,
-  "intervalLabel": "08:30–09:00 UTC",
-  "nextChangeAt": "2026-03-22T09:00:00.000Z",
-  "nextChangeLabel": "Mar 22, 2026, 9:00 AM",
+  "generatedAt": "2026-03-22T09:13:25.083Z",
+  "generatedAtLabel": "Mar 22, 2026, 9:13 AM",
+  "intervalIndex": 985650,
+  "intervalLabel": "09:00–09:30 UTC",
+  "nextChangeAt": "2026-03-22T09:30:00.000Z",
+  "nextChangeLabel": "Mar 22, 2026, 9:30 AM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-985649",
-      "currentPrice": 38,
-      "previousPrice": 27,
-      "changeAmount": 11,
+      "id": "pulse-985650",
+      "currentPrice": 29,
+      "previousPrice": 38,
+      "changeAmount": -9,
       "featured": false,
-      "tone": "Retention tweak",
-      "badge": "UPSELL ACTIVE // DELTA +11"
+      "tone": "Baseline capture",
+      "badge": "STABLE // DELTA -9"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-985649",
-      "currentPrice": 107,
-      "previousPrice": 81,
-      "changeAmount": 26,
+      "id": "vector-985650",
+      "currentPrice": 89,
+      "previousPrice": 107,
+      "changeAmount": -18,
       "featured": true,
-      "tone": "Seat-value increase",
-      "badge": "VALUE RESET // DELTA +26"
+      "tone": "Team baseline",
+      "badge": "CALIBRATED // DELTA -18"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-985649",
-      "currentPrice": 217,
-      "previousPrice": 173,
-      "changeAmount": 44,
+      "id": "beacon-985650",
+      "currentPrice": 189,
+      "previousPrice": 217,
+      "changeAmount": -28,
       "featured": false,
-      "tone": "Expansion quota push",
-      "badge": "QUOTA ACTIVE // DELTA +44"
+      "tone": "Enterprise baseline",
+      "badge": "LOCKED // DELTA -28"
     }
   ]
 }
