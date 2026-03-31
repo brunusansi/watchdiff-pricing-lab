@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-31T12:27:30.174Z",
-  "generatedAtLabel": "Mar 31, 2026, 12:27 PM",
-  "intervalIndex": 986088,
-  "intervalLabel": "12:00–12:30 UTC",
-  "nextChangeAt": "2026-03-31T12:30:00.000Z",
-  "nextChangeLabel": "Mar 31, 2026, 12:30 PM",
+  "generatedAt": "2026-03-31T12:52:40.494Z",
+  "generatedAtLabel": "Mar 31, 2026, 12:52 PM",
+  "intervalIndex": 986089,
+  "intervalLabel": "12:30–13:00 UTC",
+  "nextChangeAt": "2026-03-31T13:00:00.000Z",
+  "nextChangeLabel": "Mar 31, 2026, 1:00 PM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-986088",
-      "currentPrice": 29,
-      "previousPrice": 38,
-      "changeAmount": -9,
+      "id": "pulse-986089",
+      "currentPrice": 35,
+      "previousPrice": 29,
+      "changeAmount": 6,
       "featured": false,
-      "tone": "Baseline capture",
-      "badge": "STABLE // DELTA -9"
+      "tone": "Promo pressure",
+      "badge": "PRICE PUSH // DELTA +6"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-986088",
-      "currentPrice": 89,
-      "previousPrice": 107,
-      "changeAmount": -18,
+      "id": "vector-986089",
+      "currentPrice": 99,
+      "previousPrice": 89,
+      "changeAmount": 10,
       "featured": true,
-      "tone": "Team baseline",
-      "badge": "CALIBRATED // DELTA -18"
+      "tone": "Expansion push",
+      "badge": "ARPU TEST // DELTA +10"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-986088",
-      "currentPrice": 189,
-      "previousPrice": 217,
-      "changeAmount": -28,
+      "id": "beacon-986089",
+      "currentPrice": 211,
+      "previousPrice": 189,
+      "changeAmount": 22,
       "featured": false,
-      "tone": "Enterprise baseline",
-      "badge": "LOCKED // DELTA -28"
+      "tone": "Urgency markup",
+      "badge": "ENTERPRISE PUSH // DELTA +22"
     }
   ]
 }
