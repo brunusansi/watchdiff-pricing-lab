@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-06T06:09:59.128Z",
-  "generatedAtLabel": "Apr 6, 2026, 6:09 AM",
-  "intervalIndex": 986364,
-  "intervalLabel": "06:00–06:30 UTC",
-  "nextChangeAt": "2026-04-06T06:30:00.000Z",
-  "nextChangeLabel": "Apr 6, 2026, 6:30 AM",
+  "generatedAt": "2026-04-06T07:06:15.610Z",
+  "generatedAtLabel": "Apr 6, 2026, 7:06 AM",
+  "intervalIndex": 986366,
+  "intervalLabel": "07:00–07:30 UTC",
+  "nextChangeAt": "2026-04-06T07:30:00.000Z",
+  "nextChangeLabel": "Apr 6, 2026, 7:30 AM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-986364",
-      "currentPrice": 29,
-      "previousPrice": 38,
-      "changeAmount": -9,
+      "id": "pulse-986366",
+      "currentPrice": 25,
+      "previousPrice": 35,
+      "changeAmount": -10,
       "featured": false,
-      "tone": "Baseline capture",
-      "badge": "STABLE // DELTA -9"
+      "tone": "Defensive discount",
+      "badge": "PROMO DROP // DELTA -10"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-986364",
-      "currentPrice": 89,
-      "previousPrice": 107,
-      "changeAmount": -18,
+      "id": "vector-986366",
+      "currentPrice": 83,
+      "previousPrice": 99,
+      "changeAmount": -16,
       "featured": true,
-      "tone": "Team baseline",
-      "badge": "CALIBRATED // DELTA -18"
+      "tone": "Competitive response",
+      "badge": "COMPETITOR MATCH // DELTA -16"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-986364",
-      "currentPrice": 189,
-      "previousPrice": 217,
-      "changeAmount": -28,
+      "id": "beacon-986366",
+      "currentPrice": 179,
+      "previousPrice": 211,
+      "changeAmount": -32,
       "featured": false,
-      "tone": "Enterprise baseline",
-      "badge": "LOCKED // DELTA -28"
+      "tone": "Procurement softening",
+      "badge": "PROCUREMENT DROP // DELTA -32"
     }
   ]
 }
