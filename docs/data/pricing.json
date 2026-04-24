@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-24T19:48:54.550Z",
-  "generatedAtLabel": "Apr 24, 2026, 7:48 PM",
-  "intervalIndex": 987255,
-  "intervalLabel": "19:30–20:00 UTC",
-  "nextChangeAt": "2026-04-24T20:00:00.000Z",
-  "nextChangeLabel": "Apr 24, 2026, 8:00 PM",
+  "generatedAt": "2026-04-24T20:20:18.200Z",
+  "generatedAtLabel": "Apr 24, 2026, 8:20 PM",
+  "intervalIndex": 987256,
+  "intervalLabel": "20:00–20:30 UTC",
+  "nextChangeAt": "2026-04-24T20:30:00.000Z",
+  "nextChangeLabel": "Apr 24, 2026, 8:30 PM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-987255",
-      "currentPrice": 41,
-      "previousPrice": 25,
-      "changeAmount": 16,
+      "id": "pulse-987256",
+      "currentPrice": 27,
+      "previousPrice": 41,
+      "changeAmount": -14,
       "featured": false,
-      "tone": "Upsell burst",
-      "badge": "BUNDLE TEST // DELTA +16"
+      "tone": "Market correction",
+      "badge": "REBALANCED // DELTA -14"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-987255",
-      "currentPrice": 103,
-      "previousPrice": 83,
-      "changeAmount": 20,
+      "id": "vector-987256",
+      "currentPrice": 81,
+      "previousPrice": 103,
+      "changeAmount": -22,
       "featured": true,
-      "tone": "Feature-pack markup",
-      "badge": "FEATURE SURCHARGE // DELTA +20"
+      "tone": "Quarter-end discount",
+      "badge": "DISCOUNT WINDOW // DELTA -22"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-987255",
-      "currentPrice": 223,
-      "previousPrice": 179,
-      "changeAmount": 44,
+      "id": "beacon-987256",
+      "currentPrice": 173,
+      "previousPrice": 223,
+      "changeAmount": -50,
       "featured": false,
-      "tone": "Annual contract push",
-      "badge": "ANNUAL BUNDLE // DELTA +44"
+      "tone": "Retention exception",
+      "badge": "EXCEPTION PATH // DELTA -50"
     }
   ]
 }
