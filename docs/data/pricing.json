@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-07T10:19:46.086Z",
-  "generatedAtLabel": "May 7, 2026, 10:19 AM",
-  "intervalIndex": 987860,
-  "intervalLabel": "10:00–10:30 UTC",
-  "nextChangeAt": "2026-05-07T10:30:00.000Z",
-  "nextChangeLabel": "May 7, 2026, 10:30 AM",
+  "generatedAt": "2026-05-07T11:16:10.701Z",
+  "generatedAtLabel": "May 7, 2026, 11:16 AM",
+  "intervalIndex": 987862,
+  "intervalLabel": "11:00–11:30 UTC",
+  "nextChangeAt": "2026-05-07T11:30:00.000Z",
+  "nextChangeLabel": "May 7, 2026, 11:30 AM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-987860",
-      "currentPrice": 25,
-      "previousPrice": 35,
-      "changeAmount": -10,
+      "id": "pulse-987862",
+      "currentPrice": 27,
+      "previousPrice": 41,
+      "changeAmount": -14,
       "featured": false,
-      "tone": "Defensive discount",
-      "badge": "PROMO DROP // DELTA -10"
+      "tone": "Market correction",
+      "badge": "REBALANCED // DELTA -14"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-987860",
-      "currentPrice": 83,
-      "previousPrice": 99,
-      "changeAmount": -16,
+      "id": "vector-987862",
+      "currentPrice": 81,
+      "previousPrice": 103,
+      "changeAmount": -22,
       "featured": true,
-      "tone": "Competitive response",
-      "badge": "COMPETITOR MATCH // DELTA -16"
+      "tone": "Quarter-end discount",
+      "badge": "DISCOUNT WINDOW // DELTA -22"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-987860",
-      "currentPrice": 179,
-      "previousPrice": 211,
-      "changeAmount": -32,
+      "id": "beacon-987862",
+      "currentPrice": 173,
+      "previousPrice": 223,
+      "changeAmount": -50,
       "featured": false,
-      "tone": "Procurement softening",
-      "badge": "PROCUREMENT DROP // DELTA -32"
+      "tone": "Retention exception",
+      "badge": "EXCEPTION PATH // DELTA -50"
     }
   ]
 }
