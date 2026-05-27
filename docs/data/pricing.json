@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-27T10:49:52.524Z",
-  "generatedAtLabel": "May 27, 2026, 10:49 AM",
-  "intervalIndex": 988821,
-  "intervalLabel": "10:30–11:00 UTC",
-  "nextChangeAt": "2026-05-27T11:00:00.000Z",
-  "nextChangeLabel": "May 27, 2026, 11:00 AM",
+  "generatedAt": "2026-05-27T13:44:12.646Z",
+  "generatedAtLabel": "May 27, 2026, 1:44 PM",
+  "intervalIndex": 988827,
+  "intervalLabel": "13:30–14:00 UTC",
+  "nextChangeAt": "2026-05-27T14:00:00.000Z",
+  "nextChangeLabel": "May 27, 2026, 2:00 PM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,7 +41,7 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-988821",
+      "id": "pulse-988827",
       "currentPrice": 41,
       "previousPrice": 25,
       "changeAmount": 16,
@@ -83,7 +83,7 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-988821",
+      "id": "vector-988827",
       "currentPrice": 103,
       "previousPrice": 83,
       "changeAmount": 20,
@@ -125,7 +125,7 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-988821",
+      "id": "beacon-988827",
       "currentPrice": 223,
       "previousPrice": 179,
       "changeAmount": 44,
