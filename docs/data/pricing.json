@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-29T15:48:29.106Z",
-  "generatedAtLabel": "May 29, 2026, 3:48 PM",
-  "intervalIndex": 988927,
-  "intervalLabel": "15:30–16:00 UTC",
-  "nextChangeAt": "2026-05-29T16:00:00.000Z",
-  "nextChangeLabel": "May 29, 2026, 4:00 PM",
+  "generatedAt": "2026-05-29T17:17:04.832Z",
+  "generatedAtLabel": "May 29, 2026, 5:17 PM",
+  "intervalIndex": 988930,
+  "intervalLabel": "17:00–17:30 UTC",
+  "nextChangeAt": "2026-05-29T17:30:00.000Z",
+  "nextChangeLabel": "May 29, 2026, 5:30 PM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-988927",
-      "currentPrice": 35,
-      "previousPrice": 29,
-      "changeAmount": 6,
+      "id": "pulse-988930",
+      "currentPrice": 27,
+      "previousPrice": 41,
+      "changeAmount": -14,
       "featured": false,
-      "tone": "Promo pressure",
-      "badge": "PRICE PUSH // DELTA +6"
+      "tone": "Market correction",
+      "badge": "REBALANCED // DELTA -14"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-988927",
-      "currentPrice": 99,
-      "previousPrice": 89,
-      "changeAmount": 10,
+      "id": "vector-988930",
+      "currentPrice": 81,
+      "previousPrice": 103,
+      "changeAmount": -22,
       "featured": true,
-      "tone": "Expansion push",
-      "badge": "ARPU TEST // DELTA +10"
+      "tone": "Quarter-end discount",
+      "badge": "DISCOUNT WINDOW // DELTA -22"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-988927",
-      "currentPrice": 211,
-      "previousPrice": 189,
-      "changeAmount": 22,
+      "id": "beacon-988930",
+      "currentPrice": 173,
+      "previousPrice": 223,
+      "changeAmount": -50,
       "featured": false,
-      "tone": "Urgency markup",
-      "badge": "ENTERPRISE PUSH // DELTA +22"
+      "tone": "Retention exception",
+      "badge": "EXCEPTION PATH // DELTA -50"
     }
   ]
 }
