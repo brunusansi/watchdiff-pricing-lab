@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-04T23:31:17.456Z",
-  "generatedAtLabel": "Jun 4, 2026, 11:31 PM",
-  "intervalIndex": 989231,
-  "intervalLabel": "23:30–24:00 UTC",
-  "nextChangeAt": "2026-06-05T00:00:00.000Z",
-  "nextChangeLabel": "Jun 5, 2026, 12:00 AM",
+  "generatedAt": "2026-06-05T01:04:55.069Z",
+  "generatedAtLabel": "Jun 5, 2026, 1:04 AM",
+  "intervalIndex": 989234,
+  "intervalLabel": "01:00–01:30 UTC",
+  "nextChangeAt": "2026-06-05T01:30:00.000Z",
+  "nextChangeLabel": "Jun 5, 2026, 1:30 AM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-989231",
-      "currentPrice": 38,
-      "previousPrice": 27,
-      "changeAmount": 11,
+      "id": "pulse-989234",
+      "currentPrice": 25,
+      "previousPrice": 35,
+      "changeAmount": -10,
       "featured": false,
-      "tone": "Retention tweak",
-      "badge": "UPSELL ACTIVE // DELTA +11"
+      "tone": "Defensive discount",
+      "badge": "PROMO DROP // DELTA -10"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-989231",
-      "currentPrice": 107,
-      "previousPrice": 81,
-      "changeAmount": 26,
+      "id": "vector-989234",
+      "currentPrice": 83,
+      "previousPrice": 99,
+      "changeAmount": -16,
       "featured": true,
-      "tone": "Seat-value increase",
-      "badge": "VALUE RESET // DELTA +26"
+      "tone": "Competitive response",
+      "badge": "COMPETITOR MATCH // DELTA -16"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-989231",
-      "currentPrice": 217,
-      "previousPrice": 173,
-      "changeAmount": 44,
+      "id": "beacon-989234",
+      "currentPrice": 179,
+      "previousPrice": 211,
+      "changeAmount": -32,
       "featured": false,
-      "tone": "Expansion quota push",
-      "badge": "QUOTA ACTIVE // DELTA +44"
+      "tone": "Procurement softening",
+      "badge": "PROCUREMENT DROP // DELTA -32"
     }
   ]
 }
