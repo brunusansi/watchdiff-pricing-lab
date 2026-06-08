@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-08T05:42:30.792Z",
-  "generatedAtLabel": "Jun 8, 2026, 5:42 AM",
-  "intervalIndex": 989387,
-  "intervalLabel": "05:30–06:00 UTC",
-  "nextChangeAt": "2026-06-08T06:00:00.000Z",
-  "nextChangeLabel": "Jun 8, 2026, 6:00 AM",
+  "generatedAt": "2026-06-08T07:55:26.213Z",
+  "generatedAtLabel": "Jun 8, 2026, 7:55 AM",
+  "intervalIndex": 989391,
+  "intervalLabel": "07:30–08:00 UTC",
+  "nextChangeAt": "2026-06-08T08:00:00.000Z",
+  "nextChangeLabel": "Jun 8, 2026, 8:00 AM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-989387",
-      "currentPrice": 38,
-      "previousPrice": 27,
-      "changeAmount": 11,
+      "id": "pulse-989391",
+      "currentPrice": 41,
+      "previousPrice": 25,
+      "changeAmount": 16,
       "featured": false,
-      "tone": "Retention tweak",
-      "badge": "UPSELL ACTIVE // DELTA +11"
+      "tone": "Upsell burst",
+      "badge": "BUNDLE TEST // DELTA +16"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-989387",
-      "currentPrice": 107,
-      "previousPrice": 81,
-      "changeAmount": 26,
+      "id": "vector-989391",
+      "currentPrice": 103,
+      "previousPrice": 83,
+      "changeAmount": 20,
       "featured": true,
-      "tone": "Seat-value increase",
-      "badge": "VALUE RESET // DELTA +26"
+      "tone": "Feature-pack markup",
+      "badge": "FEATURE SURCHARGE // DELTA +20"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-989387",
-      "currentPrice": 217,
-      "previousPrice": 173,
+      "id": "beacon-989391",
+      "currentPrice": 223,
+      "previousPrice": 179,
       "changeAmount": 44,
       "featured": false,
-      "tone": "Expansion quota push",
-      "badge": "QUOTA ACTIVE // DELTA +44"
+      "tone": "Annual contract push",
+      "badge": "ANNUAL BUNDLE // DELTA +44"
     }
   ]
 }
