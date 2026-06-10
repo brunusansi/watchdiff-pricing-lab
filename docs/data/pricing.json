@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-10T10:49:40.836Z",
-  "generatedAtLabel": "Jun 10, 2026, 10:49 AM",
-  "intervalIndex": 989493,
-  "intervalLabel": "10:30–11:00 UTC",
-  "nextChangeAt": "2026-06-10T11:00:00.000Z",
-  "nextChangeLabel": "Jun 10, 2026, 11:00 AM",
+  "generatedAt": "2026-06-10T12:08:04.632Z",
+  "generatedAtLabel": "Jun 10, 2026, 12:08 PM",
+  "intervalIndex": 989496,
+  "intervalLabel": "12:00–12:30 UTC",
+  "nextChangeAt": "2026-06-10T12:30:00.000Z",
+  "nextChangeLabel": "Jun 10, 2026, 12:30 PM",
   "repoUrl": "https://github.com/brunusansi/watchdiff-pricing-lab",
   "plans": [
     {
@@ -41,13 +41,13 @@
         "AI change summaries",
         "JSON snapshot feed"
       ],
-      "id": "pulse-989493",
-      "currentPrice": 41,
-      "previousPrice": 25,
-      "changeAmount": 16,
+      "id": "pulse-989496",
+      "currentPrice": 29,
+      "previousPrice": 38,
+      "changeAmount": -9,
       "featured": false,
-      "tone": "Upsell burst",
-      "badge": "BUNDLE TEST // DELTA +16"
+      "tone": "Baseline capture",
+      "badge": "STABLE // DELTA -9"
     },
     {
       "name": "Vector",
@@ -83,13 +83,13 @@
         "Feature + copy drift alerts",
         "30-minute snapshot history"
       ],
-      "id": "vector-989493",
-      "currentPrice": 103,
-      "previousPrice": 83,
-      "changeAmount": 20,
+      "id": "vector-989496",
+      "currentPrice": 89,
+      "previousPrice": 107,
+      "changeAmount": -18,
       "featured": true,
-      "tone": "Feature-pack markup",
-      "badge": "FEATURE SURCHARGE // DELTA +20"
+      "tone": "Team baseline",
+      "badge": "CALIBRATED // DELTA -18"
     },
     {
       "name": "Beacon",
@@ -125,13 +125,13 @@
         "Custom diff thresholds",
         "Webhook + audit export"
       ],
-      "id": "beacon-989493",
-      "currentPrice": 223,
-      "previousPrice": 179,
-      "changeAmount": 44,
+      "id": "beacon-989496",
+      "currentPrice": 189,
+      "previousPrice": 217,
+      "changeAmount": -28,
       "featured": false,
-      "tone": "Annual contract push",
-      "badge": "ANNUAL BUNDLE // DELTA +44"
+      "tone": "Enterprise baseline",
+      "badge": "LOCKED // DELTA -28"
     }
   ]
 }
